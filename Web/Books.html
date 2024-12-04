@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Lalezar&family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li class="nav__item">
+                  <a class="nav__link" href="home.html">الصفحة الرئيسية</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="AboutUs.html">من نحن</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="Books.html">الكتب</a>
+                </li>
+            </ul>
+            <h1 class="nav_title">شركة E-books </h1>
+        </nav>
+    </header>
+
+<section class="section_books">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>عنوان الكتاب</th>
+                <th>رمز الكتاب (ISBN)</th>
+                <th>السعر (ل.س)</th>
+                <th>إظهار التفاصيل</th>
+                <th>اختيار</th>
+            </tr>
+        </thead>
+
+        <tr id="1">
+            <td>ألف ليلة وليلة</td>
+            <td>978-9770916738</td>
+            <td>25000</td>
+            <td><button class="table__infoButton" data-tab="1"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--1 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: دار المعارف</td>
+                <td colspan="2">تصنيف الكتاب: قصص شعبية</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    ملخص: مجموعة من القصص الشعبية تم جمعها خلال العصر الذهبي للإسلام، تسردها شهرزاد للملك شهريار.
+                    <!-- <img class="table__img" src="images/book1.jpg" alt="ألف ليلة وليلة" style="width: 150px; height: auto;"> -->
+
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم ثلاث قصص:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book1.1.jpg" alt="علاء الدين والمصباح السحري" style="width: 150px; height: auto;">
+                            <div>علاء الدين والمصباح السحري</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book1.2.jpg" alt="علي بابا والأربعون حرامي" style="width: 150px; height: auto;">
+                            <div>علي بابا والأربعون حرامي</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book1.3.jpg" alt="رحلات السندباد السبع" style="width: 150px; height: auto;">
+                            <div>رحلات السندباد السبع</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="2">
+            <td>الخبز الحافي</td>
+            <td>978-9953686030</td>
+            <td>18000</td>
+            <td><button class="table__infoButton" data-tab="2"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--2 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: المركز الثقافي العربي</td>
+                <td colspan="2">تصنيف الكتاب: رواية</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم ثلاث نسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book2.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book2.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book2.2.jpg" alt="الطبعة الثالثة" style="width: 150px; height: auto;">
+                            <div>الطبعة الثالثة</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+
+        <tr id="3">
+            <td>النبي</td>
+            <td>978-9770931106</td>
+            <td>15000</td>
+            <td><button class="table__infoButton" data-tab="3"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--3 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: دار الجمل</td>
+                <td colspan="2">تصنيف الكتاب: فلسفة وشعر</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: كتاب فلسفي يعبر عن الحكمة والإنسانية بأسلوب شعري، يروي فيه جبران خلاصة تجاربه.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم ثلاث نسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book3.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book3.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book3.2.jpg" alt="الطبعة الثالثة" style="width: 150px; height: auto;">
+                            <div>الطبعة الثالثة</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="4">
+            <td>رجال في الشمس</td>
+            <td>978-9953896481</td>
+            <td>20000</td>
+            <td><button class="table__infoButton" data-tab="4"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--4 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: المؤسسة العربية للدراسات</td>
+                <td colspan="2">تصنيف الكتاب: رواية</td>
+            </tr>
+
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: رواية تعكس مأساة الفلسطينيين من خلال قصة ثلاثة رجال يحاولون الوصول إلى الكويت.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم ثلاث نسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book4.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book4.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book4.2.jpg" alt="الطبعة الثالثة" style="width: 150px; height: auto;">
+                            <div>الطبعة الثالثة</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="5">
+            <td>مدن الملح</td>
+            <td>978-9953363929</td>
+            <td>22000</td>
+            <td><button class="table__infoButton" data-tab="5"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--5 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: المؤسسة العربية للدراسات</td>
+                <td colspan="2">تصنيف الكتاب: رواية تاريخية</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: عمل أدبي يوثق التحولات الاجتماعية والسياسية في منطقة الخليج العربي.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم ثلاث نسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book5.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book5.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="6">
+            <td>عائد إلى حيفا</td>
+            <td>978-9953896559</td>
+            <td>17000</td>
+            <td><button class="table__infoButton" data-tab="6"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--6 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: المؤسسة العربية للدراسات</td>
+                <td colspan="2">تصنيف الكتاب: رواية</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: قصة تعكس آلام الشتات الفلسطيني من خلال عودة زوجين إلى مدينتهما حيفا.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم ثلاث نسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book6.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book6.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book6.2.jpg" alt="الطبعة الثالثة" style="width: 150px; height: auto;">
+                            <div>الطبعة الثالثة</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="7">
+            <td>أرني الله</td>
+            <td>978-9770931137</td>
+            <td>16000</td>
+            <td><button class="table__infoButton" data-tab="7"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--7 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: دار الفكر</td>
+                <td colspan="2">تصنيف الكتاب: فلسفة ودين</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: كتاب يستعرض التساؤلات الفلسفية حول وجود الله ومفهوم الإيمان.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم ثلاث نسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book7.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book7.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book7.2.jpg" alt="الطبعة الثالثة" style="width: 150px; height: auto;">
+                            <div>الطبعة الثالثة</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="8">
+            <td>زمن الخيول البيضاء</td>
+            <td>978-9953364194</td>
+            <td>30000</td>
+            <td><button class="table__infoButton" data-tab="8"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--8 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: دار الشروق</td>
+                <td colspan="2">تصنيف الكتاب: رواية تاريخية</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: رواية تروي تاريخ فلسطين عبر عدة أجيال من عائلة فلسطينية.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم النسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book8.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book8.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="9">
+            <td>ثلاثية غرناطة</td>
+            <td>978-9770932851</td>
+            <td>28000</td>
+            <td><button class="table__infoButton" data-tab="9"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--9 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: دار الشروق</td>
+                <td colspan="2">تصنيف الكتاب: رواية تاريخية</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: ملحمة روائية توثق سقوط الأندلس من وجهة نظر عائلة مسلمة.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم النسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book9.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book9.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+        <tr id="10">
+            <td>الأمير</td>
+            <td>978-9953896405</td>
+            <td>19000</td>
+            <td><button class="table__infoButton" data-tab="10"></button></td>
+            <td><button class="table__chooseButton"></button></td>
+        </tr>
+        <tbody class="table__infoRow--10 hidden">
+            <tr class="table__infoRow">
+                <td colspan="2">الناشر: دار الكتاب العربي</td>
+                <td colspan="2">تصنيف الكتاب: فلسفة سياسية</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">ملخص: كتاب يتناول فلسفة الحكم والسلطة بأسلوب يثير الجدل، كتبه مكيافيلي.</td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4">
+                    <strong>أهم النسخ:</strong>
+                </td>
+            </tr>
+            <tr class="table__infoRow">
+                <td colspan="4" style="text-align: center;">
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div>
+                            <img class="table__img" src="images/book10.jpg" alt="الطبعة الاولى" style="width: 150px; height: auto;">
+                            <div>الطبعة الاولى</div>
+                        </div>
+                        <div>
+                            <img class="table__img" src="images/book10.1.jpg" alt="الطبعة الثانية" style="width: 150px; height: auto;">
+                            <div>الطبعة الثانية</div>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button id="checkbtn-1">متابعة</button>
+</section>
+
+    <section class="section_form container hidden">
+        <div class="container">
+            <form name="form1" class="form_grid">
+            
+            <div>
+                <label for="name"><b>الاسم</b></label><br>
+                <input type="text" placeholder="ادخل اسمك بالعربية" id="username" name="username"
+                 pattern="[\u0600-\u06FF\s]+" required>
+                <br>
+            </div>
+           
+            <div>
+                <label for="email"><b>الايميل</b></label><br>
+                <input type="text" placeholder="ادخل البريد الإلكتروني" id="email" name="email" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <br>
+            </div>
+           
+            <div>
+                <label for="national-number"><b>الرقم الوطني</b></label><br>
+                <input type="text" placeholder="الرقم الوطني" id="national-number" name="national-number"
+                 pattern="^(0[1-9]|1[0-5])[0-9]{9}$" required>
+                <br>
+            </div>
+            
+            <div>
+                <label for="birth-date"><b>تاريخ الولادة</b></label><br>
+                <input type="date" id="birth-date" name="birth-date">
+                <br>
+            </div>
+            
+            <div>
+                <label for="phone-number"><b>رقم الهاتف</b></label><br>
+                <input type="text" placeholder="0992034996" id="phone-number" name="phone-number"
+                 pattern="((0)(93|94|95|96|98|99)([0-9]{7}))|((0)(92|95|96|97)([0-9]{7}))" required>
+                <br>
+            </div>
+            
+            <div class="captcha__inputBox">
+               
+                <label for="verification"><b> رمز الكابتشا </b></label>
+                <br>
+                <input id="captcha-input" type="text" placeholder="ادخل الرمز"><br/>
+            </div>
+            
+            <button name="submit" id="checkbtn-2">متابعة</button>
+            
+            <div class="captcha_row">
+                    
+                <input type="button" value="تحديث" id="refreshbtn" >
+                <input type="text" id="captchaTxtArea" name="text" value=""><br/>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script src="Functions.js"></script>
+<script>
+    books();
+</script>
+</body>
+</html>
